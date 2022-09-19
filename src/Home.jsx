@@ -1,26 +1,20 @@
 import React, { useState } from "react";
 
 const Home = () => {
-  // let name = "Vegeta";
-  const [name, setName] = useState("Vegeta");
-  const [age, setAge] = useState(20);
-  const handleClick = () => {
-    setName("Goku");
-    setAge(30);
-  };
-
-  // const handleClickAgain = (name, e) => {
-  //   console.log("Please, don't click me " + name, e.target);
-  // };
+  const [blogs, setBlogs] = useState([
+    { title: "My New Website", body: "Lorem ipsum dolor....", author: "Vegeta", id: 1 },
+    { title: "Welcome Party !!!", body: "Lorem ipsum dolor....", author: "Goku", id: 2 },
+    { title: "Web Dev Top Tips", body: "Lorem ipsum dolor....", author: "Krilin", id: 3 },
+  ]);
 
   return (
     <div className="flex flex-col p-8 mt-3 gap-8">
-      <h1>Home</h1>
-      <p>{name}</p>
-      <p>{age}</p>
-      <button onClick={handleClick} className="flex justify-start items-center bg-blue-700 p-2 w-[80px] rounded-lg">
-        Click Me
-      </button>
+      {blogs.map((blog) => (
+        <div className="p-16 hover:shadow-lg hover:shadow-blue-500/50" key={blog.id}>
+          <h1 className="text-xl font-bold">{blog.title}</h1>
+          <p>Written by {blog.author}</p>
+        </div>
+      ))}
     </div>
   );
 };
