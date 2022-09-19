@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
@@ -7,14 +8,20 @@ const Home = () => {
     { title: "Web Dev Top Tips", body: "Lorem ipsum dolor....", author: "Krilin", id: 3 },
   ]);
 
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
+
+  useEffect(() => {
+    console.log("Im run away from you");
+    console.log(blogs);
+  });
+
   return (
     <div className="flex flex-col p-8 mt-3 gap-8">
-      {blogs.map((blog) => (
-        <div className="p-16 hover:shadow-lg hover:shadow-blue-500/50" key={blog.id}>
-          <h1 className="text-xl font-bold">{blog.title}</h1>
-          <p>Written by {blog.author}</p>
-        </div>
-      ))}
+      <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
+      <BlogList blogs={blogs.filter((blog) => blog.author === "Goku")} title="Goku's Blogs!" />
     </div>
   );
 };
