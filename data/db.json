@@ -1,0 +1,15 @@
+{
+    "blogs": [{
+            "title": "My First Blog",
+            "body": "lorem ipsum dolor sit amet lur gak ngerti aku ngemeng epe",
+            "author": "Goku",
+            "id": 1
+        },
+        {
+            "title": "My First Blog",
+            "body": "running away from you away to god",
+            "author": "Bejita",
+            "id": 2
+        }
+    ]
+}
