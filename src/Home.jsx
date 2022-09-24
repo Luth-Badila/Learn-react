@@ -11,7 +11,7 @@ const Home = () => {
       <div className="flex flex-col p-8 mt-3 gap-8">
         {error && <div>{error}</div>}
         {isLoading && <div>Now Loading .....</div>}
-        {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+        {blogs && <BlogList blogs={blogs} title="List Tamu :" />}
       </div>
     </>
   );
