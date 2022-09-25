@@ -1,15 +1,33 @@
 {
     "blogs": [{
-            "title": "My First Blog",
-            "body": "lorem ipsum dolor sit amet lur gak ngerti aku ngemeng epe",
-            "author": "Goku",
+            "title": "Undangan",
+            "body": "Kami mengundang anda untuk menghadiri pernikahan kami",
+            "author": "Diego Ribas",
             "id": 1
         },
         {
-            "title": "My First Blog",
-            "body": "running away from you away to god",
-            "author": "Bejita",
-            "id": 2
+            "title": "Undangan",
+            "body": "Kami mengundang anda untuk menghadiri pernikahan kami",
+            "author": "Juninho",
+            "id": 1
+        },
+        {
+            "title": "Undangan",
+            "body": "Kami mengundang anda untuk menghadiri pernikahan kami",
+            "author": "Alvaro Garcia",
+            "id": 1
+        },
+        {
+            "title": "Undangan",
+            "body": "Kami mengundang anda untuk menghadiri pernikahan kami",
+            "author": "Raul Meireles",
+            "id": 1
+        },
+        {
+            "title": "Undangan",
+            "body": "Kami mengundang anda untuk menghadiri pernikahan kami",
+            "author": "Cristiano Ronaldo",
+            "id": 1
         }
     ]
 }

@@ -9,7 +9,7 @@ const BlogList = ({ blogs, title }) => {
         <div className="p-8 hover:shadow-lg hover:shadow-blue-500/50" key={blog.id}>
           <Link to={`/blogs/${blog.id}`}>
             <h1 className="text-xl font-bold">{blog.title}</h1>
-            <p>Written by {blog.author}</p>
+            <p>Kepada Sdr/Sdri {blog.author}</p>
           </Link>
         </div>
       ))}
