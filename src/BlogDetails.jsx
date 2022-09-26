@@ -18,10 +18,10 @@ const BlogDetails = () => {
   return (
     <>
       <h1 className="flex flex-col p-8 mt-3 gap-8 text-3xl">
-        {isLoading && <div>Now Loading.....</div>}
-        {error && <div>{error}</div>}
+        {isLoading && <div className="flex justify-center items-center h-[80vh]">Now Loading.....</div>}
+        {error && <div className="flex justify-center items-center h-[80vh]">{error}</div>}
         {blog && (
-          <article>
+          <article className="flex flex-col justify-center items-center h-[80vh]">
             <h2>{blog.title}</h2>
             <p>Kepada Sdr/Sdri {blog.author}</p>
             <div>{blog.body}</div>
