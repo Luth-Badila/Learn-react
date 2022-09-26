@@ -5,6 +5,7 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("Goku");
+  const [id, setId] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
 
@@ -41,6 +42,8 @@ const Create = () => {
             <option value="Goku">Goku</option>
             <option value="Bejita">Bejita</option>
           </select>
+          <label className="text-[20px]">Nama penerima</label>
+          <input type="text" value={id} onChange={(e) => setId(e.target.value)} required className="h-[50px] border border-black p-2" />
           {!isLoading && <button className="bg-blue-700 text-white rounded-md cursor-pointer w-[100px] p-3">Add Blog</button>}
           {isLoading && (
             <button disabled className="bg-blue-700 text-white rounded-md cursor-pointer w-[100px] p-3">
