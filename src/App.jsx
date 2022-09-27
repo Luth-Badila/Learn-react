@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
 import NotFound from "./NotFound";
+import InvitationCard from "./InvitationCard";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/blogs/:id">
             <BlogDetails />
+          </Route>
+          <Route path="/invitation/:id">
+            <InvitationCard />
           </Route>
           <Route path="*">
             <NotFound />
