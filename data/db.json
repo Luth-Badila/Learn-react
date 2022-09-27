@@ -1,10 +1,15 @@
 {
   "blogs": [
     {
-      "title": "Undangan",
-      "body": "Kami mengundang anda untuk menghadiri pernikahan kami",
+      "title": "Undangan Pernikahan",
+      "body": "Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan Walimatul Ursy putra-putri kami, yang Insya Allah akan diselenggarakan pada:",
+      "day": "Kamis dan Jumat",
+      "date": "25 dan 26 November 2018",
+      "time": "13.00-16.00 WIB",
+      "place": "Desa Durung beduk, kecamatan Sidoarjo, Kabupaten Sidoarjo",
+      "footer": "Yang dengan hal ini bisa mensukseskan acara tersebut. Demikian surat undangan ini kami sampaikan, atas perhatian dan kerjasamanya kami ucapkan terima kasih.Wassalamualaikum Warahmatullahi Wabarakatuh",
       "author": "Juninho",
-      "id": "Rico"
+      "id": "Rico & Natasha"
     },
     {
       "title": "Undangan",
